@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
 
@@ -17,8 +17,6 @@
     <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
         
-    <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
 
     <!-- Import Google font (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +34,7 @@
     <link rel="stylesheet" href="assets/icons/around-icons.min.css">
 
     <!-- Theme styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
 
     <!-- Page loading styles -->
     <style>
@@ -172,17 +170,6 @@
             DL Photography
           </a>
 
-          <!-- Theme switcher -->
-          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
-            <input class="form-check-input" type="checkbox" id="theme-mode">
-            <label class="form-check-label" for="theme-mode">
-              <i class="ai-sun fs-lg"></i>
-            </label>
-            <label class="form-check-label" for="theme-mode">
-              <i class="ai-moon fs-lg"></i>
-            </label>
-          </div>
-
           <!-- Mobile menu toggler (Hamburger) -->
           <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -192,13 +179,16 @@
           <nav class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Get in touch / Book me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Events Photography</a>
+                <a class="nav-link" href="#gallery">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Print</a>
               </li>
             </ul>
           </nav>
@@ -207,8 +197,24 @@
 
       <section class="bg-primary bg-opacity-10 d-flex min-vh-100 overflow-hidden py-5">
         <div class="container d-flex justify-content-center pb-sm-3 py-md-4 py-xl-5">
-          <div class="row align-items-center pt-5 mt-4 mt-xxl-0">
-
+          <div class="row align-items-center pt-5 mt-4 mt-xxl-0">     
+            <div class="col-lg-6 text-center text-lg-start">
+              <h1 class="display-2 pb-3 mb-4"><span class="fw-normal">Full servises</span> photography agency</h1>
+              <div class="row row-cols-3">
+                <div class="col">
+                  <i class="ai-bulb-alt d-block fs-1 text-dark mb-2 pb-1"></i>
+                  <p class="mb-0">Individual approach to the brand</p>
+                </div>
+                <div class="col">
+                  <i class="ai-rocket d-block fs-2 text-dark mb-3"></i>
+                  <p class="mb-0">bla bla bla</p>
+                </div>
+                <div class="col">
+                  <i class="ai-circle-check-filled d-block fs-3 text-dark mb-3"></i>
+                  <p class="mb-0">Completing tasks exactly on time</p>
+                </div>
+              </div>
+            </div>
             <!-- Video + Parallax -->
             <div class="col-lg-6 mb-4 mb-lg-0 pb-3 pb-lg-0">
               <div class="parallax mx-auto mx-lg-0" style="max-width: 582px;">
@@ -257,30 +263,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 text-center text-lg-start">
-              <h1 class="display-2 pb-3 mb-4"><span class="fw-normal">Full servises</span> photography agency</h1>
-              <div class="row row-cols-3">
-                <div class="col">
-                  <i class="ai-bulb-alt d-block fs-1 text-dark mb-2 pb-1"></i>
-                  <p class="mb-0">Individual approach to the brand</p>
-                </div>
-                <div class="col">
-                  <i class="ai-rocket d-block fs-2 text-dark mb-3"></i>
-                  <p class="mb-0">bla bla bla</p>
-                </div>
-                <div class="col">
-                  <i class="ai-circle-check-filled d-block fs-3 text-dark mb-3"></i>
-                  <p class="mb-0">Completing tasks exactly on time</p>
-                </div>
-              </div>
-              <div class="d-sm-flex justify-content-center justify-content-lg-start pt-5 mt-lg-2">
-                <a class="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1" href="#">Get in touch</a>
-                <a class="btn btn-lg btn-link" href="#gallery">
-                  Our work
-                  <i class="ai-arrow-right ms-2"></i>
-                </a>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -298,114 +281,114 @@
             
           </div>
 
-          <div class="gallery masonry-grid mb-2 mb-md-4 pb-lg-3 gallery" data-columns="3">
+          <div class="gallery masonry-grid mb-2 mb-md-4 pb-lg-3 gallery" data-columns="2">
             
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/landing/coworking-space/gallery/01.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/landing/coworking-space/gallery/th01.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/landing/coworking-space/gallery/02.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/landing/coworking-space/gallery/02.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/landing/coworking-space/gallery/03.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/landing/coworking-space/gallery/03.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/landing/coworking-space/gallery/04.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/landing/coworking-space/gallery/04.jpg" alt="Open space">
               </div>
             </a>
 
-            <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/blog/grid/01.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+            <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/gallery/DFC_1.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
+                <img class="zoom-effect-img" src="assets/img/gallery/DFC_1.jpg" alt="Open space">
+              </div>
+            </a>
+
+            <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/blog/grid/01.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
+                <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+              </div>
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/blog/grid/01.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/blog/grid/02.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/blog/grid/02.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/blog/grid/03.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/blog/grid/03.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/blog/grid/04.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/blog/grid/04.jpg" alt="Open space">
               </div>
             </a>
 
-            <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/gallery/DFC_1.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
-                <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
-                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
-              </div>
-              <div class="zoom-effect-wrapper rounded-5">
-                <img class="zoom-effect-img" src="assets/img/gallery/DFC_1.jpg" alt="Open space">
-              </div>
-            </a>
-
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/gallery/11.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/gallery/11.jpg" alt="Open space">
               </div>
             </a>
 
             <a class="gallery-item masonry-grid-item zoom-effect" href="assets/img/gallery/7.png" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
-              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-5 overflow-hidden z-2 opacity-0">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
                 <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
               </div>
-              <div class="zoom-effect-wrapper rounded-5">
+              <div class="zoom-effect-wrapper">
                 <img class="zoom-effect-img" src="assets/img/gallery/7.png" alt="Open space">
               </div>
             </a>

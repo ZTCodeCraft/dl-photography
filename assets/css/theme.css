@@ -72,6 +72,14 @@
   box-shadow: 0 0.4375rem 1.25rem rgba(0, 0, 0, 0.4) !important;
 }
 
+@font-face {
+  font-family: 'GaretFont'; /* Choose a name for your font */
+  src: url('/assets/garet/Garet-Book.woff2') format('woff2'), /* Modern Browsers */
+       url('/assets/garet/Garet-Book.woff') format('woff'),   /* Good Browsers */
+       url('/assets/garet/Garet-Book.ttf') format('truetype'); /* Older Browsers */
+       /* You can add more formats if needed, like .otf */
+}
+
 /* stylelint-enable stylistic/value-list-max-empty-lines, stylistic/function-max-empty-lines, stylistic/selector-list-comma-newline-after, declaration-no-important, property-no-vendor-prefix */
 :root,
 [data-bs-theme=light] {
@@ -250,7 +258,7 @@
 
 body {
   margin: 0;
-  font-family: var(--ar-body-font-family);
+  font-family: 'GaretFont', sans-serif;
   font-size: var(--ar-body-font-size);
   font-weight: var(--ar-body-font-weight);
   line-height: var(--ar-body-line-height);
@@ -14654,6 +14662,7 @@ hr.dropdown-divider {
 
 .nav-item {
   margin-bottom: 0;
+  margin-right: 70px;
 }
 
 .nav-link {
@@ -14661,6 +14670,7 @@ hr.dropdown-divider {
   align-items: center;
   background: none;
   border: 0;
+  font-size: 1.3rem;
 }
 .nav-link [class^=opacity-],
 .nav-link [class*=" opacity-"] {
@@ -14766,6 +14776,7 @@ hr.dropdown-divider {
   align-items: center;
   padding: calc(var(--ar-navbar-brand-padding-y) * 0.5) 0;
   font-weight: var(--ar-navbar-brand-font-weight);
+  margin-right: 170px;
 }
 
 .navbar-collapse {
