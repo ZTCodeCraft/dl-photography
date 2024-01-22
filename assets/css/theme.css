@@ -4165,7 +4165,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1192px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4578,6 +4578,11 @@ textarea.form-control-lg {
   --ar-accordion-body-padding-y: 1.5rem;
   --ar-accordion-active-color: var(--ar-primary);
   --ar-accordion-active-bg: transparent;
+}
+
+.bordered-div{
+  border: 1px solid white; /* You can customize the border color, width, and style */
+  padding: 20px; /* Optional: Add some padding to the content inside the div */
 }
 
 .accordion-button {
