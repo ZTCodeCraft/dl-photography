@@ -4581,8 +4581,8 @@ textarea.form-control-lg {
 }
 
 .bordered-div{
-  border: 1px solid white; /* You can customize the border color, width, and style */
-  padding: 20px; /* Optional: Add some padding to the content inside the div */
+  border: 1px solid white;
+  padding: 20px;
 }
 
 .accordion-button {
