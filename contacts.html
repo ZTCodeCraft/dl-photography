@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
@@ -46,7 +46,7 @@
         visibility: hidden;
         z-index: 9999;
       }
-      .dark-mode .page-loading {
+      .page-loading {
         background-color: #121519;
       }
       .page-loading.active {
@@ -75,7 +75,7 @@
         font-weight: normal;
         color: #6f788b;
       }
-      .dark-mode .page-loading-inner > span {
+      .page-loading-inner > span {
         color: #fff;
         opacity: .6;
       }
@@ -91,7 +91,7 @@
         -webkit-animation: spinner .75s linear infinite;
         animation: spinner .75s linear infinite;
       }
-      .dark-mode .page-spinner {
+      .page-spinner {
         background-color: rgba(255,255,255,.25);
       }
       @-webkit-keyframes spinner {
@@ -148,10 +148,10 @@
 
 
     <!-- Page wrapper -->
-    <main class="page-wrapper">
+    <main class="page-wrapper bg-dark">
 
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-      <header class="navbar navbar-expand-lg fixed-top">
+      <header class="navbar navbar-dark navbar-expand-lg fixed-top">
         <div class="container">
 
           <!-- Navbar brand (Logo) -->
@@ -198,29 +198,29 @@
           <div class="col-lg-4 pe-xxl-4">
 
             <!-- Page title -->
-            <h1 class="display-5">Contact me</h1>
-            <p class="fs-lg pb-4 mb-0 mb-sm-2">Get in touch with me by completing the form or email me at <b>email@gmail.com</b></p>
+            <h1 class="display-5 text-bg-dark">Contact me</h1>
+            <p class="fs-lg pb-4 mb-0 mb-sm-2 text-bg-dark">Get in touch with me by completing the form or email me at <b>email@gmail.com</b></p>
           </div>
           <div class="col-lg-8 col-xl-7 offset-xl-1">
 
             <!-- Contact form -->
             <form class="row g-4 needs-validation" novalidate="">
               <div class="col-sm-12">
-                <label class="form-label fs-base" for="name">Name</label>
+                <label class="form-label fs-base text-bg-dark" for="name">Name</label>
                 <input class="form-control form-control-lg" type="text" placeholder="Your name" required="" id="name">
                 <div class="invalid-feedback">Please enter your name!</div>
               </div>
               <div class="col-sm-6">
-                <label class="form-label fs-base" for="phone">Phone</label>
+                <label class="form-label fs-base text-bg-dark" for="phone">Phone</label>
                 <input class="form-control form-control-lg" type="text" placeholder="Phone number" id="phone">
               </div>
               <div class="col-sm-6">
-                <label class="form-label fs-base" for="email">Email</label>
+                <label class="form-label fs-base text-bg-dark" for="email">Email</label>
                 <input class="form-control form-control-lg" type="email" placeholder="Email address" required="" id="email">
                 <div class="invalid-feedback">Please provide a valid email address!</div>
               </div>
               <div class="col-sm-12">
-                <label class="form-label fs-base" for="message">How can we help?</label>
+                <label class="form-label fs-base text-bg-dark" for="message">How can we help?</label>
                 <textarea class="form-control form-control-lg" rows="5" placeholder="Enter your message here..." required="" id="message"></textarea>
                 <div class="invalid-feedback">Please enter your message!</div>
               </div>
@@ -236,8 +236,8 @@
             <div class="col-lg-4 pe-xxl-4">
   
               <!-- Page title -->
-              <h1 class="display-5">Book a call</h1>
-              <p class="fs-lg pb-4 mb-0 mb-sm-2">Book a 15 min call ? or some other quick description</b></p>
+              <h1 class="display-5 text-bg-dark">Book a call</h1>
+              <p class="fs-lg pb-4 mb-0 mb-sm-2 text-bg-dark">Book a 15 min call ? or some other quick description</b></p>
             </div>
             <div class="col-lg-8 col-xl-7 offset-xl-1">
   
@@ -252,20 +252,17 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer py-5">
+    <footer class="footer py-5 bg-dark">
       <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center pt-1 py-sm-2 py-lg-4 py-xl-5">
         <div class="d-flex gap-3 mb-3 mb-sm-4 mb-lg-0">          
-          <a class="btn btn-outline-secondary btn-icon btn-sm btn-google" href="mailto:leshevad@gmail.com" role="button"  aria-label="Email">
+          <a class="btn btn-outline-secondary btn-icon btn-sm btn-google text-bg-dark" href="mailto:leshevad@gmail.com" role="button"  aria-label="Email">
             <i class="ai-mail"></i>
           </a>
-          <a class="btn btn-outline-secondary btn-icon btn-sm btn-instagram" href="https://www.instagram.com/dianalesheva.ph/" target="_blank" aria-label="Instagram">
+          <a class="btn btn-outline-secondary btn-icon btn-sm btn-instagram text-bg-dark" href="https://www.instagram.com/dianalesheva.ph/" target="_blank" aria-label="Instagram">
             <i class="ai-instagram"></i>
           </a>
         </div>
-        <div class="nav flex-sm-nowrap justify-content-center mb-3 mb-sm-4 mb-lg-0">
-          <a class="nav-link fw-normal border-end-lg px-2 px-sm-3 px-lg-4 py-1 py-sm-0 mx-1 mx-sm-0 mx-xl-2" href="contacts.html">Contacts</a>
-        </div>
-        <p class="text-body-secondary mb-0">© All rights reserved: ZT Code Craft</p>
+        <p class="text-body-secondary mb-0 text-bg-dark">© All rights reserved: ZT Code Craft</p>
       </div>
     </footer>
 
