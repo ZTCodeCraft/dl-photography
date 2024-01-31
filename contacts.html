@@ -131,6 +131,29 @@
         }
       })()
     </script>
+
+  <!-- Email Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-nav">
+          <div class="modal-header">
+            <h5 class="modal-title" id="subscriptionModalLabel">Diana Lesheva Photography</h5>
+        
+          </div>
+          <div class="modal-body text-center">
+            <!-- Your logo image -->
+
+            <!-- Confirmation message -->
+            <p class="mb-0">
+              Thank you for your inquiry. We will contact you soon!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="closeModalButton">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </head>
 
 
@@ -199,28 +222,28 @@
           <div class="col-lg-8 col-xl-7 offset-xl-1">
 
             <!-- Contact form -->
-            <form class="row g-4 needs-validation" novalidate="">
+            <form class="row g-4 needs-validation" id="form">
               <div class="col-sm-12">
                 <label class="form-label fs-base" for="name">Name</label>
-                <input class="form-control form-control-lg" type="text" placeholder="Your name" required="" id="name">
+                <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name" name="name">
                 <div class="invalid-feedback">Please enter your name!</div>
               </div>
               <div class="col-sm-6">
                 <label class="form-label fs-base" for="phone">Phone</label>
-                <input class="form-control form-control-lg" type="text" placeholder="Phone number" id="phone">
+                <input class="form-control form-control-lg" type="text" placeholder="Phone number" id="phone" name="phone">
               </div>
               <div class="col-sm-6">
                 <label class="form-label fs-base" for="email">Email</label>
-                <input class="form-control form-control-lg" type="email" placeholder="Email address" required="" id="email">
+                <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email" name="email">
                 <div class="invalid-feedback">Please provide a valid email address!</div>
               </div>
               <div class="col-sm-12">
                 <label class="form-label fs-base" for="message">How can we help?</label>
-                <textarea class="form-control form-control-lg" rows="5" placeholder="Enter your message here..." required="" id="message"></textarea>
+                <textarea class="form-control form-control-lg" rows="6" placeholder="Enter your message here..." required id="message" name="message"></textarea>
                 <div class="invalid-feedback">Please enter your message!</div>
               </div>
               <div class="col-sm-12 pt-2">
-                <button class="btn btn-lg btn-primary" type="submit">Send a request</button>
+                <button class="btn btn-lg btn-primary" type="submit" id="button">Send a request</button>
               </div>
             </form>
           </div>
@@ -279,7 +302,16 @@
     <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
 
     <!-- Bootstrap + Theme scripts -->
-
     <script src="assets/js/theme.min.js"></script>
+
+    <!-- EmailJS script-->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('cG3EzUdvjcjO2QVO9')
+    </script>
+    <script src="assets/js/email.js"></script>
+
   </body>
 </html>
