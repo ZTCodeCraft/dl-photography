@@ -93,6 +93,7 @@
   --ar-gray-800: #434a57;
   --ar-gray-900: #121519;
   --ar-primary: #D6AD60;
+  --ar-creme: #DDB98F;
   --ar-secondary: #edf1f5;
   --ar-success: #3fca90;
   --ar-info: #3f7fca;
@@ -4013,8 +4014,7 @@ textarea.form-control-lg {
   --ar-nav-link-padding-x: 0;
   --ar-nav-link-padding-y: 0.725rem;
   --ar-nav-link-font-weight: 500;
-  --ar-nav-link-color: #121519;
-  --ar-nav-link-hover-color: var(--ar-navbar-hover-color);
+  --ar-nav-link-color: var(--ar-creme);
   --ar-nav-link-disabled-color: var(--ar-navbar-disabled-color);
   display: flex;
   font-weight: bold;
@@ -4598,8 +4598,9 @@ textarea.form-control-lg {
 }
 
 .bordered-div{
-  border: 1px solid white;
-  padding: 20px;
+  border: 1px solid var(--ar-creme);
+  border-radius:10px 10px 10px 10px;
+  padding: 5px;
 }
 
 .accordion-button {
