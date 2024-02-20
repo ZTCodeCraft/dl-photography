@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>DL Photography | Portfolio</title>
+    <meta name="description" content="Discover a world of visual storytelling with Diana Lesheva Photography, where each frame captures the essence of events and products.">
+    <meta name="keywords" content="Diana Lesheva Photography, event photography, product photography, professional photography, capturing moments, special event photographer, product showcase, corporate events photography, social gatherings photography, commercial product photography, creative event documentation, high-quality photography, memorable event moments, product branding photography, event photography services">
+    <meta name="author" content="ZT Code Craft">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="assets/img/logo-square.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/logo-square.png">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/leaflet/dist/leaflet.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand pe-sm-3" style="color: var(--ar-creme)" href="index.html">
+            <img src="assets/img/dl-logo.png" width="150" height="50">
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll navbar-nav-main me-auto" style="--ar-scroll-height: 520px;">
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="contacts.html">Get in touch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="#gallery">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="print.html">Print</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="position-relative">
+
+        <div class="d-none d-lg-block" style="height: 100px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 160px;"></div>
+        <div class="d-md-none" style="height: 60px;"></div>
+      </section>
+
+      <section class="d-flexoverflow-hidden py-5 mt-3">
+        <div class="container d-flex justify-content-center pb-sm-3">
+          <div class="row">     
+            <div class="col-lg-6 pb-sm-3">
+              <h3 class="display-2 pb-3 mb-4 pt-5 mt-5 text-primary">Lesheva Photography</h3>
+              <h5 class="" style="color: #DDB98F;">I am passionate about capturing moments that tell stories through my lens, turning ordinary scenes into extraordinary memories.</h5>
+            </div>
+            <!-- Video + Parallax -->
+            <div class="col-lg-6 mb-lg-0 pb-lg-0 rounded-5">
+              <div class="card zoom-effect border-0 rounded-4 overflow-hidden">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 z-2"></span>
+                <div class="zoom-effect-wrapper">
+                  <img src="assets/img/hero.jpg" class="zoom-effect-img" alt="Category image">
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+      <section id="gallery">
+
+        <!-- Page container -->
+        <div class="container pt-5 pb-lg-5 pb-md-4 pb-2 my-5">
+
+          <!-- Page title + filters -->
+          <div class="row align-items-center gy-2 mb-4 pb-1 pb-sm-2 pb-lg-3">
+            <div class="col-lg-5">
+              <h1 class="mb-lg-0 text-primary">My Work</h1>
+            </div>
+            
+          </div>
+
+          <div class="gallery masonry-grid mb-2 mb-md-4 pb-lg-3 gallery" data-columns="2">
+
+            <a class="gallery-item masonry-grid-item zoom-effect" href="https://res.cloudinary.com/dinhzbroe/image/upload/v1706269966/dl-photography/general/1.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
+                <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+              </div>
+              <div class="zoom-effect-wrapper">
+                <img class="zoom-effect-img" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1706269966/dl-photography/general/1.jpg" onerror="this.style.display='none';">
+              </div>
+            </a>
+
+            <a class="gallery-item masonry-grid-item zoom-effect" href="https://res.cloudinary.com/dinhzbroe/image/upload/v1706269966/dl-photography/general/2.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
+                <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+              </div>
+              <div class="zoom-effect-wrapper">
+                <img class="zoom-effect-img" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1706269966/dl-photography/general/2.jpg" onerror="this.style.display='none';">
+              </div>
+            </a>
+
+            <a class="gallery-item masonry-grid-item zoom-effect" href="https://res.cloudinary.com/dinhzbroe/image/upload/v1706269966/dl-photography/general/3.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
+                <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+              </div>
+              <div class="zoom-effect-wrapper">
+                <img class="zoom-effect-img" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1706269966/dl-photography/general/3.jpg" onerror="this.style.display='none';">
+              </div>
+            </a>
+
+            <a class="gallery-item masonry-grid-item zoom-effect" href="https://res.cloudinary.com/dinhzbroe/image/upload/v1706711844/dl-photography/general/4.jpg" data-lg-id="4b30d645-2942-4c6d-b8fd-705a82028c5e">
+              <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 overflow-hidden z-2 opacity-0">
+                <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+              </div>
+              <div class="zoom-effect-wrapper">
+                <img class="zoom-effect-img" src="https://res.cloudinary.com/dinhzbroe/image/upload/v1706711844/dl-photography/general/4.jpg" onerror="this.style.display='none';">
+              </div>
+            </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center pt-1 py-sm-2 py-lg-4 py-xl-5">
+        <div class="d-flex gap-3 mb-3 mb-sm-4 mb-lg-0">          
+          <a class="btn btn-outline-secondary btn-icon btn-sm btn-google" href="mailto:leshevad@gmail.com" role="button"  aria-label="Email">
+            <i class="ai-mail"></i>
+          </a>
+          <a class="btn btn-outline-secondary btn-icon btn-sm btn-instagram" href="https://www.instagram.com/dianalesheva.ph/" target="_blank" aria-label="Instagram">
+            <i class="ai-instagram"></i>
+          </a>
+        </div>
+        <div class="nav flex-sm-nowrap justify-content-center mb-3 mb-sm-4 mb-lg-0">
+          <a class="nav-link fw-normal border-end-lg px-2 px-sm-3 px-lg-4 py-1 py-sm-0 mx-1 mx-sm-0 mx-xl-2" href="contacts.html">Contacts</a>
+        </div>
+        <p class="text-body-secondary mb-0">© All rights reserved: <a class="text-body-secondary" style="text-decoration: none;" href="https://ztcodecraft.com/" target="_blank">ZT Code Craft</a></p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html> 

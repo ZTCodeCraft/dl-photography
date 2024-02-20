@@ -13,8 +13,8 @@
     <meta name="author" content="ZT Code Craft">
 
     <!-- Webmanifest + Favicon / App icons -->
-    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/img/logo-square.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/logo-square.png">
 
     <!-- Vendor styles -->
     <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/icons/around-icons.min.css">
 
     <!-- Theme styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme-2.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
 
     <!-- Page loading styles -->
     <style>
@@ -155,7 +155,7 @@
 
           <!-- Navbar brand (Logo) -->
           <a class="navbar-brand pe-sm-3" style="color: var(--ar-creme)" href="index.html">
-            DL Photography
+            <img src="assets/img/dl-logo.png" width="150" height="50">
           </a>
 
           <!-- Mobile menu toggler (Hamburger) -->
@@ -179,7 +179,7 @@
                 <a class="nav-link" style="font-weight: bold;" href="products.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="font-weight: bold;" href="#">Print</a>
+                <a class="nav-link" style="font-weight: bold;" href="print.html">Print</a>
               </li>
             </ul>
           </nav>
@@ -187,23 +187,28 @@
       </header>
 
       <section class="position-relative">
-        <div class="position-absolute w-100 h-100 top-0 start-0 bg-size-cover bg-position-center" style="background-image: url(assets/img/2.png);"></div>
-        <div class="container position-relative z-2 text-center pt-2 pt-sm-4 pt-lg-5">
-        <div class="d-none d-lg-block" style="height: 200px;"></div>
-        <div class="d-none d-md-block d-lg-none" style="height: 260px;"></div>
-        <div class="d-md-none" style="height: 160px;"></div>
+
+        <div class="d-none d-lg-block" style="height: 100px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 160px;"></div>
+        <div class="d-md-none" style="height: 60px;"></div>
       </section>
 
       <section class="d-flexoverflow-hidden py-5 mt-3">
         <div class="container d-flex justify-content-center pb-sm-3 bordered-div">
           <div class="row">     
-            <div class="col-lg-6 pb-sm-3 text-center align-self-center text-lg-start">
-              <h3 class="display-2 pb-3 mb-4 text-center" style="color: #dfa666;">Lesheva Photography</h3>
-              <h5 class="text-center" style="color: #DDB98F;">I am passionate about capturing moments that tell stories through my lens, turning ordinary scenes into extraordinary memories.</h5>
+            <div class="col-lg-6 pb-sm-3 px-5 pt-lg-5 mt-lg-5 pb-4 text-lg-start">
+              <h3 class="display-2 pb-3 mb-4 text-primary">Lesheva Photography</h3>
+              <h5 style="color: #DDB98F;">I am passionate about capturing moments that tell stories through my lens, turning ordinary scenes into extraordinary memories.</h5>
             </div>
             <!-- Video + Parallax -->
             <div class="col-lg-6 mb-lg-0 pb-lg-0 rounded-5">
-              <img src="assets/img/hero.jpg" class="rounded-2 float-right" alt="Avatar">
+              <div class="card zoom-effect border-0 rounded-4 overflow-hidden">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 z-2"></span>
+                <div class="zoom-effect-wrapper">
+                  <img src="assets/img/hero.jpg" class="zoom-effect-img" alt="Category image">
+                </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -217,7 +222,7 @@
           <!-- Page title + filters -->
           <div class="row align-items-center gy-2 mb-4 pb-1 pb-sm-2 pb-lg-3">
             <div class="col-lg-5">
-              <h1 class="mb-lg-0">My Work</h1>
+              <h1 class="mb-lg-0 text-primary">My Work</h1>
             </div>
             
           </div>

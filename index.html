@@ -13,8 +13,8 @@
     <meta name="author" content="ZT Code Craft">
 
     <!-- Webmanifest + Favicon / App icons -->
-    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/img/logo-square.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/logo-square.png">
 
     <!-- Vendor styles -->
     <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
@@ -154,8 +154,8 @@
         <div class="container">
 
           <!-- Navbar brand (Logo) -->
-          <a class="navbar-brand pe-sm-3" style="color:#121519" href="index.html">
-            DL Photography
+          <a class="navbar-brand pe-sm-3" style="color: var(--ar-creme)" href="index.html">
+            <img src="assets/img/dl-logo.png" width="150" height="50">
           </a>
 
           <!-- Mobile menu toggler (Hamburger) -->
@@ -179,7 +179,7 @@
                 <a class="nav-link" style="font-weight: bold;" href="products.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="font-weight: bold;" href="#">Print</a>
+                <a class="nav-link" style="font-weight: bold;" href="print.html">Print</a>
               </li>
             </ul>
           </nav>
@@ -195,15 +195,21 @@
       </section>
 
       <section class="d-flexoverflow-hidden py-5 mt-3">
-        <div class="container d-flex justify-content-center pb-sm-3 py-md-4 py-xl-3 bordered-div">
-          <div class="row py-5">     
-            <div class="col-lg-6 text-center text-lg-start pt-3">
-              <h3 class="display-2 pb-3 mb-4 text-center">Photography Agency</h3>
-              <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+        <div class="container d-flex justify-content-center pb-sm-3 bordered-div">
+          <div class="row">     
+            <div class="col-lg-6 pb-sm-3 px-5 pt-lg-5 mt-lg-5 pb-4 text-lg-start">
+              <h3 class="display-2 pb-3 mb-4 text-primary">Lesheva Photography</h3>
+              <h5 style="color: #DDB98F;">I am passionate about capturing moments that tell stories through my lens, turning ordinary scenes into extraordinary memories.</h5>
             </div>
             <!-- Video + Parallax -->
-            <div class="col-lg-6 mb-4 mb-lg-0 pb-3 pb-lg-0">
-              <img src="assets/img/hero.jpg" alt="Avatar" style="max-width: 600px;">
+            <div class="col-lg-6 mb-lg-0 pb-lg-0 rounded-5">
+              <div class="card zoom-effect border-0 rounded-4 overflow-hidden">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 z-2"></span>
+                <div class="zoom-effect-wrapper">
+                  <img src="assets/img/hero.jpg" class="zoom-effect-img" alt="Category image">
+                </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -217,7 +223,7 @@
           <!-- Page title + filters -->
           <div class="row align-items-center gy-2 mb-4 pb-1 pb-sm-2 pb-lg-3">
             <div class="col-lg-5">
-              <h1 class="mb-lg-0">My Work</h1>
+              <h1 class="mb-lg-0 text-primary">My Work</h1>
             </div>
             
           </div>
@@ -307,4 +313,4 @@
     <!-- Bootstrap + Theme scripts -->
     <script src="assets/js/theme.min.js"></script>
   </body>
-</html>
+</html> 
