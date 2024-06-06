@@ -7651,7 +7651,7 @@ var lightgallery_LightGallery = /*#__PURE__*/function () {
         _this7.triggerSlideItemLoad(currentSlide, index, delay, speed, isFirstSlide);
       }, function () {
         currentSlide.addClass('lg-complete lg-complete_');
-        currentSlide.html('<span class="lg-error-msg">Oops... Failed to load content...</span>');
+        currentSlide.html('<span class="lg-error-msg">No content available</span>');
       });
     }
   }, {

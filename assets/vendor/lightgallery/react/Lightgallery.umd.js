@@ -1589,7 +1589,7 @@
                 _this.triggerSlideItemLoad(currentSlide, index, delay, speed, isFirstSlide);
             }, function () {
                 currentSlide.addClass('lg-complete lg-complete_');
-                currentSlide.html('<span class="lg-error-msg">Oops... Failed to load content...</span>');
+                currentSlide.html('<span class="lg-error-msg">No content available</span>');
             });
         };
         LightGallery.prototype.triggerSlideItemLoad = function ($currentSlide, index, delay, speed, isFirstSlide) {
