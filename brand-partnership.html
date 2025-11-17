@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
 
@@ -7,10 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
     
     <!-- SEO meta tags -->
-    <title>Studio Di Light | Portfolio</title>
-    <meta name="description" content="Discover a world of visual storytelling with Diana Lesheva Photography, where each frame captures the essence of events and products.">
-    <meta name="keywords" content="Diana Lesheva Photography, event photography, product photography, professional photography, capturing moments, special event photographer, product showcase, corporate events photography, social gatherings photography, commercial product photography, creative event documentation, high-quality photography, memorable event moments, product branding photography, event photography services">
+    <title>Studio Di Light | Brand Management</title>
+    <meta name="description" content="Partner with Diana Lesheva Photography for authentic brand collaborations, content creation, and influencer partnerships that tell your story.">
+    <meta name="keywords" content="brand partnership, influencer collaboration, content creation, brand photography, Diana Lesheva Photography, marketing partnership, social media content, brand ambassador">
     <meta name="author" content="ZT Code Craft">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4JT9CZY5C">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C4JT9CZY5C');
+    </script>
 
     <!-- Webmanifest + Favicon / App icons -->
     <link rel="icon" type="image/png" href="assets/img/dlight-logo.png" sizes="32x32">
@@ -39,7 +50,7 @@
         visibility: hidden;
         z-index: 9999;
       }
-      .page-loading {
+      [data-bs-theme="dark"] .page-loading {
         background-color: #121519;
       }
       .page-loading.active {
@@ -63,12 +74,12 @@
       }
       .page-loading-inner > span {
         display: block;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 1rem;
         font-weight: normal;
         color: #6f788b;
       }
-      .page-loading-inner > span {
+      [data-bs-theme="dark"] .page-loading-inner > span {
         color: #fff;
         opacity: .6;
       }
@@ -84,7 +95,7 @@
         -webkit-animation: spinner .75s linear infinite;
         animation: spinner .75s linear infinite;
       }
-      .page-spinner {
+      [data-bs-theme="dark"] .page-spinner {
         background-color: rgba(255,255,255,.25);
       }
       @-webkit-keyframes spinner {
@@ -109,7 +120,6 @@
           transform: none;
         }
       }
-      
     </style>
 
     <!-- Page loading scripts -->
@@ -124,29 +134,6 @@
         }
       })()
     </script>
-
-  <!-- Email Modal -->
-    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content bg-nav">
-          <div class="modal-header">
-            <h5 class="modal-title" id="subscriptionModalLabel">Diana Lesheva Photography</h5>
-        
-          </div>
-          <div class="modal-body text-center">
-            <!-- Your logo image -->
-
-            <!-- Confirmation message -->
-            <p class="mb-0">
-              Thank you for your email. We will contact you soon!
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal" id="closeModalButton">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
   </head>
 
 
@@ -164,10 +151,10 @@
 
 
     <!-- Page wrapper -->
-    <main class="page-wrapper bg-dark">
+    <main class="page-wrapper">
 
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-      <header class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <header class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
           <!-- Navbar brand (Logo) -->
@@ -202,68 +189,54 @@
         </div>
       </header>
 
-      <section class="container pt-5 mt-5 pb-lg-2 pb-xl-4 py-xxl-5 my-5">
+      <!-- Brand Management Content Section -->
+      <section class="container pt-5 pb-lg-5 pb-md-4 pb-2 my-5">
 
-        <div class="row pb-1 pb-sm-3 pb-lg-4 pt-5 mt-4" data-bs-theme="dark">
-          <div class="col-lg-4 pe-xxl-4">
+        <!-- Page title -->
+        <div class="row align-items-center gy-2 mb-4 pb-1 pb-sm-2 pb-lg-3">
+          <h1 class="text-center text-primary pt-3 pt-md-4 pt-lg-5 mt-lg-0 mt-xl-2 mt-xxl-4">Brand Management</h1>            
+        </div>
 
-            <!-- Page title -->
-            <h1 class="display-6 text-primary">Contact me</h1>
-            <p class="fs-lg pb-4 mb-0 mb-sm-2 text-bg-dark">Write me your idea.</b></p>
-          </div>
-          <div class="col-lg-8 col-xl-7 offset-xl-1">
-
-            <!-- Contact form -->
-            <form class="row g-4 needs-validation" id="form">
-              <div class="col-sm-12">
-                <label class="form-label fs-base" for="name">Name</label>
-                <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name" name="name">
-                <div class="invalid-feedback">Please enter your name!</div>
-              </div>
-              <div class="col-sm-6">
-                <label class="form-label fs-base" for="phone">Phone</label>
-                <input class="form-control form-control-lg" type="text" placeholder="Phone number" id="phone" name="phone">
-              </div>
-              <div class="col-sm-6">
-                <label class="form-label fs-base" for="email">Email</label>
-                <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email" name="email">
-                <div class="invalid-feedback">Please provide a valid email address!</div>
-              </div>
-              <div class="col-sm-12">
-                <label class="form-label fs-base" for="message">How can we help?</label>
-                <textarea class="form-control form-control-lg" rows="6" placeholder="Enter your message here..." required id="message" name="message"></textarea>
-                <div class="invalid-feedback">Please enter your message!</div>
-              </div>
-              <div class="col-sm-12 pt-2">
-                <button class="btn btn-lg btn-primary" type="submit" id="button">Send a request</button>
-              </div>
-            </form>
+        <!-- Brand Management Description -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <p class="fs-5 mb-4" style="color: #DDB98F;">
+              We help you connect with the right brands, negotiate fair deals, and handle all communication.
+            </p>
           </div>
         </div>
 
-
-        <div class="row pb-1 pb-sm-3 pb-lg-4 pt-5 mt-4">
-            <div class="col-lg-4 pe-xxl-4 pt-xl-5 mt-xl-3">
-              <!-- Page title -->
-              <h1 class="display-6 text-primary">Book a call</h1>
-              <p class="fs-lg pb-4 mb-0 mb-sm-2 text-bg-dark">Let’s bring your vision to light. 
-                Book a call to explore how we can create together — whether it’s a photography project, brand collaboration, or long-term partnership.</b></p>
-            </div>
-            <div class="col-lg-8 col-xl-7 offset-xl-1">
-              <!-- Calendly inline widget begin -->
-              <div class="calendly-inline-widget" data-url="https://calendly.com/leshevad/30min" style="min-width:320px;height:880px;"></div>
-              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-              <!-- Calendly inline widget end -->   
+        <!-- About the Service Section -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+            <h2 class="text-center text-primary mb-4">About the Service</h2>
+            <p class="fs-6 text-center mb-4" style="color: #DDB98F;">
+              Studio Di Light acts as your bridge to professional brand collaborations — from research and personalised outreach to contract negotiation and ongoing communication.
+            </p>
+            <p class="fs-6 text-center" style="color: #DDB98F;">
+              The goal is to save you time, secure better conditions, and build strong, long-term partnerships with brands that truly fit your values and audience.
+            </p>
+          </div>
         </div>
-               
+
+       
+
+        <!-- Call to Action -->
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h3 class="text-primary mb-3">Ready to Collaborate?</h3>
+            <p class="mb-4">Let's discuss how we can create meaningful partnerships that drive results for your brand.</p>
+            <a href="contacts.html" class="btn btn-primary btn-lg">Get in Touch</a>
+          </div>
+        </div>
+
       </section>
-
     </main>
 
     <!-- Footer -->
-    <footer class="footer py-5 bg-dark" data-bs-theme="dark">
+    <footer class="footer py-5">
       <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center pt-1 py-sm-2 py-lg-4 py-xl-5">
-        <div class="d-flex gap-3 mb-3 mb-sm-4 mb-lg-0">          
+        <div class="d-flex gap-3 mb-3 mb-sm-4 mb-lg-0">
           <a class="btn btn-outline-secondary btn-icon btn-sm btn-google" href="mailto:leshevad@gmail.com" role="button"  aria-label="Email">
             <i class="ai-mail"></i>
           </a>
@@ -273,6 +246,9 @@
           <a class="btn btn-outline-secondary btn-icon btn-sm btn-facebook" href="https://www.facebook.com/diana.lesheva" target="_blank" aria-label="Facebook">
             <i class="ai-facebook"></i>
           </a>
+        </div>
+        <div class="nav flex-sm-nowrap justify-content-center mb-3 mb-sm-4 mb-lg-0">
+          <a class="nav-link fw-normal border-end-lg px-2 px-sm-3 px-lg-4 py-1 py-sm-0 mx-1 mx-sm-0 mx-xl-2" href="contacts.html">Contacts</a>
         </div>
         <p class="text-body-secondary mb-0">© All rights reserved: <a class="text-body-secondary" style="text-decoration: none;" href="https://ztcodecraft.com/" target="_blank">ZT Code Craft</a></p>
       </div>
@@ -288,20 +264,7 @@
     </a>
 
 
-    <!-- Vendor scripts: JS libraries and plugins -->
-
-
     <!-- Bootstrap + Theme scripts -->
     <script src="assets/js/theme.min.js"></script>
-
-    <!-- EmailJS script-->
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-      emailjs.init('cG3EzUdvjcjO2QVO9')
-    </script>
-    <script src="assets/js/email.js"></script>
-
   </body>
 </html>
