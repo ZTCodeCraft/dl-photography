@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /fgdb35hjwt4.html
+
+Sitemap: https://studiodilight.com/sitemap.xml
